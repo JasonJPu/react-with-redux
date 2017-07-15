@@ -27,7 +27,11 @@ VideoDetail.propTypes = {
     id: PropTypes.object,
     kind: PropTypes.string,
     snippet: PropTypes.object,
-  }).isRequired,
+  }),
 };
+
+VideoDetail.defaultProps = {
+  video: null,
+}
 
 export default VideoDetail;

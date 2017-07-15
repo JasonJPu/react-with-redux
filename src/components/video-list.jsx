@@ -23,7 +23,11 @@ const VideoList = (props) => {
 
 VideoList.propTypes = {
   videos: PropTypes.arrayOf(PropTypes.object).isRequired,
-  onVideoSelect: PropTypes.function.isRequired,
+  onVideoSelect: PropTypes.func,
+};
+
+VideoList.defaultProps = {
+  onVideoSelect: null,
 };
 
 export default VideoList;

@@ -29,7 +29,11 @@ VideoListItem.propTypes = {
     kind: PropTypes.string,
     snippet: PropTypes.object,
   }).isRequired,
-  onVideoSelect: PropTypes.function.isRequired,
+  onVideoSelect: PropTypes.func,
+};
+
+VideoListItem.defaultProps = {
+  onVideoSelect: null,
 };
 
 export default VideoListItem;
