@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import YTSearch from 'youtube-api-search';
 import SearchBar from './components/search-bar';
 import VideoList from './components/video-list';
-import VideoDetail from './components/video-detail'
+import VideoDetail from './components/video-detail';
 
 const API_KEY = process.env.GOOGLE_API;
 

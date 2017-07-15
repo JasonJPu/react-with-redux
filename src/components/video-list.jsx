@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import PropTypes from 'prop-types';
 
 import VideoListItem from './video-list-item';
@@ -6,11 +6,11 @@ import VideoListItem from './video-list-item';
 const VideoList = (props) => {
   const videoItems = props.videos.map((video) => {
     return (
-       <VideoListItem
-         video={video}
-         key={video.etag}
-         onVideoSelect={props.onVideoSelect}
-       />
+      <VideoListItem
+        video={video}
+        key={video.etag}
+        onVideoSelect={props.onVideoSelect}
+      />
     );
   });
 
@@ -23,6 +23,7 @@ const VideoList = (props) => {
 
 VideoList.propTypes = {
   videos: PropTypes.arrayOf(PropTypes.object).isRequired,
+  onVideoSelect: PropTypes.function.isRequired,
 };
 
 export default VideoList;
