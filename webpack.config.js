@@ -27,7 +27,9 @@ module.exports = {
   },
   plugins: [
     new webpack.DefinePlugin({
-      'GOOGLE_API': process.env.GOOGLE_API
-    })
-  ]
+      'process.env': {
+        GOOGLE_API: JSON.stringify(process.env.GOOGLE_API),
+      },
+    }),
+  ],
 };
