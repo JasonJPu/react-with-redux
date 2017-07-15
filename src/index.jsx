@@ -1,5 +1,7 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+const API_KEY = process.env.API_KEY;
 
 // Create a new component. Should produce HTML
 const App = () => {
@@ -7,4 +9,4 @@ const App = () => {
 };
 
 // Take component's HTML and put in DOM
-ReactDOM.render(<App />, document.querySelector(".container"));
+ReactDOM.render(<App />, document.querySelector('.container'));

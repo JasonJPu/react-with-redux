@@ -22,5 +22,10 @@ module.exports = {
   devServer: {
     historyApiFallback: true,
     contentBase: './'
-  }
+  },
+  plugins: [
+    new webpack.DefinePlugin({
+      'GOOGLE_API': process.env.GOOGLE_API
+    })
+  ]
 };
