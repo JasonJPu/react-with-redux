@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const VideoListItem = ({ video }) => {
-  console.log(video);
   return <li>Video</li>;
 };
 

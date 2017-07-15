@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types';
 
-import VideoListItem from './video_list_item';
+import VideoListItem from './video-list-item';
 
 const VideoList = (props) => {
   const videoItems = props.videos.map((video) => {
