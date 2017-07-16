@@ -1,3 +1,3 @@
-# ReduxSimpleStarter
+# ReduxYoutubeClient
 
-Starter boilerplate code for React Udemy course.
+React application that serves as a Youtube client used for finding videos.
