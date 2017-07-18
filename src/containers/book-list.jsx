@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import PropType from 'prop-type';
 
 class BookList extends Component {
   renderList() {
@@ -27,3 +28,7 @@ function mapStateToProps(state) {
 }
 
 export default connect(mapStateToProps)(BookList);
+
+BookList.propTypes = {
+  books: PropType.arrayOf(PropType.string).isRequired,
+};
