@@ -22,5 +22,12 @@ module.exports = {
   devServer: {
     historyApiFallback: true,
     contentBase: './'
-  }
+  },
+  plugins: [
+    new webpack.DefinePlugin({
+      'process.env': {
+        WEATHER_API: JSON.stringify(process.env.WEATHER_API),
+      },
+    }),
+  ],
 };
