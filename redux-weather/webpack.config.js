@@ -29,6 +29,7 @@ module.exports = {
     new webpack.DefinePlugin({
       'process.env': {
         WEATHER_API: JSON.stringify(process.env.WEATHER_API),
+        GOOGLE_API: JSON.stringify(process.env.GOOGLE_API),
       },
     }),
   ],
