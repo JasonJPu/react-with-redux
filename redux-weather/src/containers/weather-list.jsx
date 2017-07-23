@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 
 class WeatherList extends Component {
   renderWeather(cityData) {
@@ -30,6 +31,13 @@ class WeatherList extends Component {
     );
   }
 }
+
+WeatherList.defaultProps = {
+  weather: PropTypes.shape({
+    city: PropTypes.object,
+    list: PropTypes.arrayOf(PropTypes.object),
+  }),
+};
 
 function mapStateToProps({ weather }) {
   return { weather };
